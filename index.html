@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" id="theme">
+    <script src="https://kit.fontawesome.com/190a1b33fe.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- -----------Header------------- --> 
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/OM.png" alt="logo" id="img"> -->
+                <h1>Shreeapad</h1>
+                <button onclick=" change()">Change Theme</button>
+                <ul id="sidemenu">    
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#more">More</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark"  onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1 data-aos="slide-right">Hi, I'm <span>Shreepad Aher</span></h1>          
+                <p>Software Developer Enthusiast</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------About-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\Users\Admin\Desktop\Shreepad_Photo-removebg-preview.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="des">As a software engineering fresher, my aim is to secure a position in a dynamic organization where I can
+                        apply my technical skills, learn from experienced professionals, and contribute to cutting-edge software
+                        solutions. I seek an environment that nurtures creativity, innovation, and professional growth.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('secondaryEducation')">Secondary Education</p>
+                        <p class="tab-links" onclick="opentab('higherSecondaryEducation')">Higher Secondary Education</p>
+                        <p class="tab-links" onclick="opentab('graduation')">Graduation</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="secondaryEducation">
+                        <ul>
+                            <li><span>School: </span>Sheth Dagaduram Katariya High School</li><br>
+                            <li><span>Year: </span>2014</li><br>
+                            <li><span>Percentage: </span>70.40</li><br>
+                            <li><span>Location: </span>Pune</li><br>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="higherSecondaryEducation">
+                        <ul>
+                            <li><span>College: </span>TSSM</li><br>
+                            <li><span>Year: </span>2018</li><br>
+                            <li><span>Percentage: </span>61.71</li><br>
+                            <li><span>Stream: </span>Mechnical</li><br>
+                            <li><span>Location: </span>Pune</li><br>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="graduation">
+                        <ul>
+                            <li><span>College: </span>Anantrao Pawar College Of Engineering</li><br>
+                            <li><span>Year: </span>2021</li><br>
+                            <li><span>CGPA: </span>7.9</li><br>
+                            <li><span>Stream: </span>Mechnical</li><br>
+                            <li><span>Location: </span>Pune, Maharashtra</li><br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------- Skills------------------------- -->
+
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End</h2>
+                    
+                    <ul class="list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Back-End</h2>
+                
+                    <ul class="list">
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>Tools and Technology</i></h2>
+                    
+                    <ul class="list">
+                        <li>GitHub</li>
+                        <li>Eclipse</li>
+                        <li>Jira</li>
+                        <li>VS Code</li> 
+                    </ul>
+                    
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database</h2>
+                
+                    <ul class="list">
+                        <li>MySQL</li>
+                        <li>Oracle</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <--------------------- Projects------------------------- --> 
+     <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Personal Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>GENERALISED DATA STRUCTURE LIBRARY</h3>
+                        <p>In this project, we have make use of all the data 
+                            structure. We have bring all data structure together
+                            and build standard libreaty for them, so we can access 
+                            them from single file only.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+    
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>FIR Filing System</h3>
+                        <p>
+                            In this project, we have make use of linkedlist and objects
+                            oriented programmingg. With the help of application use can register a compliant in legitimate manner. 
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+    
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>PERSONAL PORTFOLIO WEBSITE</h3>
+                        <p>Personal portfolio website is a unique way to showcase one's 
+                            work and let other know about him.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>  
+            </div>
+            <!-- <a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+
+    <!-- ------------------- Contact ---------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>sonuaher12@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8149772217 & 8007830830</p>
+                    <div class="social-icon">
+                        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/l_shreepad_aher_l/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://github.com/Shreepad12"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shreepad-aher-31101712a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="C:\Users\Admin\Desktop\Java Full Stack.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+
+                <div class="contact-left">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"> Shreeapd Aher</i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxJ9qxvWlVZ2mityg63Fm7UyCxKZBudgrP9erTYCj8OXkakBxyU0DvhN-ZTP6fXQVrsKA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script src="dark.js"></script>
+</body>
+</html>
