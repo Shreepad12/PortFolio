@@ -1,6 +1,6 @@
 function change() {
     let theme = document.getElementById("theme");
-let lightTheme = "light.css";
+let lightTheme = "Light.css";
 let darkTheme = "style.css";
 // Checking what stylesheet the link tag has.
 if (theme.getAttribute("href") == darkTheme) {
